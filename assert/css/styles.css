@@ -41,7 +41,7 @@
     background-size: 80%; /* Riduce l'immagine al 50% della larghezza del contenitore */
     background-repeat: repeat; /* Evita che lo sfondo si ripeta */
     background-position: center; /* Centra l'immagine */
-    cursor: url("https://i.imgur.com/8Jhi9oS.png"), auto;
+    cursor: url("https://i.imgur.com/8Jhi9oS.png"), !important;
   }
   
   .Aka {
