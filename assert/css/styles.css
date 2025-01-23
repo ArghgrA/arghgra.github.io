@@ -1,0 +1,238 @@
+/* Stili per centrare il contenuto */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra orizzontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Centra il testo */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+  }
+  
+  .Name {
+    font-size: 3rem;
+    margin-top: 80px; /* Spazio tra l'immagine e il testo */
+    color: #C7C7C7;
+  }
+  
+  .about-me {
+    width: 90%; /* Larghezza del blocco di testo (più ampia per dispositivi mobili) */
+    margin: 0 auto; /* Centra il blocco orizzontalmente */
+    text-align: left; /* Allinea il testo a sinistra */
+    margin-top: 5rem; /* Distanza dalla scritta "Argh!" */
+    font-size: 1rem;
+    color: #C7C7C7;
+    padding: 1rem; /* Aggiunge un po' di spazio interno */
+  }
+  
+  .navbar-toggler-right {
+    margin-left: auto; /* Spinge il pulsante a destra */
+  }
+  
+  .navbar {
+    padding: 20px;
+  }
+  
+  .page-section {
+    padding: 100px 0; /* Aggiunge spazio sopra e sotto ogni sezione */
+  }
+  
+  body {
+    background-image: url('/assert/img/sfondo.png');
+    background-size: 80%; /* Riduce l'immagine al 50% della larghezza del contenitore */
+    background-repeat: repeat; /* Evita che lo sfondo si ripeta */
+    background-position: center; /* Centra l'immagine */
+  }
+  
+  .Aka {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    color: #C7C7C7;
+  }
+  
+  .text-container {
+    display: inline-block; /* Fa sì che il contenitore si adatti alla larghezza del testo */
+  }
+  
+  hr.custom-line {
+    border: 0; /* Rimuove il bordo predefinito */
+    height: 2px; /* Spessore della linea */
+    background-color: white; /* Colore della linea (bianco) */
+    margin: 10px auto; /* Centra la linea orizzontalmente */
+    width: 100%; /* La linea avrà la stessa larghezza del contenitore del testo */
+  }
+  
+  .page-section {
+    text-align: center; /* Centra tutto il contenuto della sezione */
+  }
+  
+  .container {
+    margin-top: -20px;
+  }
+  
+  .foto-profilo {
+    border-radius: 50%; /* Trasforma l'immagine in un cerchio */
+    display: block; /* Centra l'immagine */
+    margin: 0 auto; /* Centra l'immagine orizzontalmente */
+    width: 300px; /* Larghezza fissa (deve essere uguale all'altezza) */
+    height: 300px; /* Altezza fissa (deve essere uguale alla larghezza) */
+    object-fit: cover; /* Assicura che l'immagine copra l'area senza deformarsi */
+}
+  
+
+  a { 
+    color: inherit; 
+    text-decoration:none;
+    }
+
+    .Contatti {
+        color: #C7C7C7;
+        margin: 0 auto; /* Centra il div orizzontalmente */
+        padding: 1rem;
+        margin-top: -60px;
+        margin-bottom: 3px;
+        text-align: left; /* Allinea il testo a sinistra */
+        width: 90%; /* Imposta una larghezza per il div */
+        max-width: 250px; /* Opzionale: imposta una larghezza massima */
+        margin-left: 43%;
+    }
+
+    @media (max-width: 767.98px) {
+        .Contatti {
+            width: 100%; /* Occupa tutta la larghezza su dispositivi mobili */
+            margin-left: 29%;
+            padding: 0.5rem; /* Riduci il padding */
+        }
+    }
+
+    .Project{
+        width: 90%; /* Larghezza del blocco di testo (più ampia per dispositivi mobili) */
+    margin: 0 auto; /* Centra il blocco orizzontalmente */
+    text-align: left; /* Allinea il testo a sinistra */
+    margin-top: 8rem; /* Distanza dalla scritta "Argh!" */
+    font-size: 1rem;
+    color: #C7C7C7;
+    padding: 1rem; /* Aggiunge un po' di spazio interno */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(0); /* Trasforma le frecce in bianco */
+    }
+
+    .carousel-inner {
+        padding: 8rem; /* Aumenta lo spazio verticale */
+      }
+  
+      .carousel-item {
+        text-align: center; /* Centra il testo */
+      }
+  
+      .text-background {
+        display: inline-block;
+        padding: 20px; /* Spazio interno */
+        border-radius: 10px; /* Bordi arrotondati */
+      }
+  
+      .text-background h3,
+      .text-background p {
+        color: #C7C7C7; /* Testo bianco */
+        margin: 0; /* Rimuove i margini predefiniti */
+      }
+
+
+      /* Regole per dispositivi mobili */
+@media (max-width: 767.98px) {
+    .carousel-inner {
+      padding: 2rem; /* Riduci il padding per dispositivi mobili */
+    }
+  
+    .text-background {
+      padding: 10px; /* Riduci il padding interno */
+    }
+  
+    .text-background h3 {
+      font-size: 1.5rem; /* Riduci la dimensione del titolo */
+    }
+  
+    .text-background p {
+      font-size: 0.9rem; /* Riduci la dimensione del testo */
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 30px; /* Riduci la dimensione delle frecce */
+      height: 30px;
+    }
+  }
+  
+  /* Regole per schermi più grandi */
+  @media (min-width: 768px) {
+    .carousel-inner {
+      padding: 8rem; /* Mantieni il padding per schermi più grandi */
+    }
+  
+    .text-background h3 {
+      font-size: 2rem; /* Dimensione del titolo per schermi più grandi */
+    }
+  
+    .text-background p {
+      font-size: 1rem; /* Dimensione del testo per schermi più grandi */
+    }
+  }
+
+
+
+.full-width-line{
+    border: 0; /* Rimuove il bordo predefinito */
+    height: 2px; /* Spessore della linea */
+    background-color: white; /* Colore della linea (bianco) */
+    margin: 0; /* Rimuove i margini */
+    width: 100%; /* La linea copre tutta la larghezza */
+  }
+
+ 
+/* Applica lo sfondo nero alla navbar e al menu a tendina solo in modalità responsive */
+@media (max-width: 991.98px) { /* Bootstrap usa 991.98px come breakpoint per il responsive */
+  /* Sfondo nero per la navbar */
+  .navbar {
+      background-color: black !important; /* Sfondo nero */
+  }
+
+  /* Sfondo nero per il menu a tendina */
+  .navbar-collapse {
+      background-color: black; /* Sfondo nero */
+      padding: 10px; /* Aggiungi un po' di padding per migliorare l'aspetto */
+      border-radius: 5px; /* Bordi arrotondati (opzionale) */
+      margin-top: 10px; /* Aggiungi un po' di spazio sopra (opzionale) */
+  }
+
+  /* Se vuoi che il testo sia bianco */
+  .navbar-nav .nav-link {
+      color: white !important; /* Testo bianco */
+  }
+
+  /* Se vuoi che il testo sia bianco anche quando è attivo */
+  .navbar-nav .nav-link.active {
+      color: white !important; /* Testo bianco per il link attivo */
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.formazione {
+  width: 90%; /* Larghezza del blocco di testo (più ampia per dispositivi mobili) */
+  margin: 0 auto; /* Centra il blocco orizzontalmente */
+  text-align: left; /* Allinea il testo a sinistra */
+  margin-top: 2rem; /* Distanza dalla scritta "Argh!" */
+  font-size: 0.1rem; /* Prova questo se 0.9rem è ancora troppo grande */
+  color: #C7C7C7;
+  padding: 1rem; /* Aggiunge un po' di spazio interno */
+}
+
+h3{
+  font-size: 1.5rem;
+}
