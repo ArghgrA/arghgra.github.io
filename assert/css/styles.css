@@ -256,4 +256,5 @@ font-size: 1.5rem;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  z-index: -1;
 }
