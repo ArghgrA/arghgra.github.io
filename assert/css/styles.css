@@ -69,15 +69,39 @@ hr.custom-line {
   margin-top: -20px;
 }
 
-.foto-profilo {
-  border-radius: 50%; /* Trasforma l'immagine in un cerchio */
-  display: block; /* Centra l'immagine */
-  margin: 0 auto; /* Centra l'immagine orizzontalmente */
-  width: 300px; /* Larghezza fissa (deve essere uguale all'altezza) */
-  height: 300px; /* Altezza fissa (deve essere uguale alla larghezza) */
-  object-fit: cover; /* Assicura che l'immagine copra l'area senza deformarsi */
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
 }
 
+.foto-profilo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.foto-profilo:not(.hover) {
+  opacity: 1;
+}
+
+.foto-profilo.hover {
+  opacity: 0;
+}
+
+.image-container:hover .foto-profilo:not(.hover) {
+  opacity: 0;
+}
+
+.image-container:hover .foto-profilo.hover {
+  opacity: 1;
+}
 
 a { 
   color: inherit; 
